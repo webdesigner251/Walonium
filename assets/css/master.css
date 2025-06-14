@@ -4112,10 +4112,10 @@ img {
 .service__title,
 .service__title-3 {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1;
   color: var(--black-2);
-  padding-bottom: 20px;
+  padding-bottom: 12px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -4165,6 +4165,7 @@ img {
 .service__content p {
   color: var(--black-4);
   padding-bottom: 32px;
+  line-height: 1.4;
 }
 
 @media (max-width: 767px) {
@@ -4614,8 +4615,7 @@ img {
 .service__item.style2 .service__content .icon-box img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  height: 120px;
-  width: auto;
+  width: 100%;
 }
 
 .service__item.style2:hover .service__content .icon-box img {
