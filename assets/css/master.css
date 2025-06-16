@@ -12692,6 +12692,7 @@ HOME FIVE FOOTER
   .hero__area_1 .hero_1_content h1 {
     margin-bottom: 15px;
     margin-top: -110px;
+    letter-spacing: -1px;
   }
 
   .service__item.style2 .service__content .icon-box {
