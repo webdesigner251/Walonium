@@ -6007,8 +6007,8 @@ img {
 
 .who__right .shape-2 {
   position: absolute;
-  left: 23%;
-  bottom: 15%;
+  left: 43%;
+  bottom: 10%;
 }
 
 @media (max-width: 1399px) {
@@ -6026,8 +6026,8 @@ img {
 
 .who__right .shape-3 {
   position: absolute;
-  left: 17%;
-  top: 8%;
+  left: 8%;
+  top: 10%;
 }
 
 @media (max-width: 1199px) {
@@ -6079,8 +6079,8 @@ img {
 
 .who__project {
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 58%;
+  left: 10%;
 }
 
 @media (max-width: 1199px) {
@@ -7528,8 +7528,8 @@ img {
 }
 
 .breadcrumb__area {
-  padding-top: 300px;
-  padding-bottom: 192px;
+  padding-top: 240px;
+  padding-bottom: 132px;
   background-image: url(../imgs/hero/breadcrumb.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -7539,14 +7539,14 @@ img {
 @media (max-width: 1199px) {
   .breadcrumb__area {
     padding-top: 220px;
-    padding-bottom: 150px;
+    padding-bottom: 90px;
   }
 }
 
 @media (max-width: 767px) {
   .breadcrumb__area {
-    padding-top: 160px;
-    padding-bottom: 80px;
+    padding-top: 180px;
+    padding-bottom: 50px;
   }
 }
 
@@ -11486,19 +11486,22 @@ HOME FIVE TESTIMONIAL
 .testimonial__item-5 {
   max-width: 630px;
   position: relative;
-  padding-left: 80px;
+  padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (max-width: 991px) {
   .testimonial__item-5 {
-    padding-left: 36px;
+    padding: 0 36px;
   }
 }
 
 .testimonial__item-5::before {
   content: "";
   position: absolute;
-  left: 19px;
+  left: 0;
   right: 0;
   bottom: 0;
   top: 87px;
@@ -11525,7 +11528,7 @@ HOME FIVE TESTIMONIAL
 }
 
 .testimonial__thumb-5 {
-  margin-left: -20px;
+  /* margin-left: -20px; */
   position: relative;
   z-index: 2;
 }
@@ -12712,3 +12715,11 @@ HOME FIVE FOOTER
 }
 
 /*# sourceMappingURL=master.css.map */
+
+.service__item.style2 .service__content .icon-box img {
+  border-radius: 20px;
+}
+
+.testimonial__wrapper-5 .swiper-slide {
+  height: auto !important;
+}
