@@ -348,7 +348,7 @@
     loop: true,
     speed: 3000,
     spaceBetween: 50,
-    slidesPerView: 2,
+    slidesPerView: 1,
     autoplay: {
       delay: 1500,
     },

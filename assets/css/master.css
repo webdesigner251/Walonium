@@ -12724,3 +12724,28 @@ HOME FIVE FOOTER
 .testimonial__wrapper-5 .swiper-slide {
   height: auto !important;
 }
+
+@media (max-width: 767px) {
+  .about__area .image-1 img {
+    width: 100% !important;
+  }
+
+  .testimonial__thumb-5 {
+    width: 60px;
+  }
+
+  .testimonial__item-5::before {
+    top: 27px;
+    height: 120%;
+  }
+
+  .testimonial__rating-5 {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+
+  }
+
+  .testimonial__rating-star {
+    font-size: 12px;
+  }
+}
