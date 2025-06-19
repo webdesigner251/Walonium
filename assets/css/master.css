@@ -2023,8 +2023,9 @@ img {
 .offcanvas__area {
   position: fixed;
   width: 400px;
-  height: 100vh;
+  height: 100%;
   top: 0;
+  bottom: 0;
   right: -400px;
   z-index: 99;
   padding: 40px 30px;
@@ -2107,7 +2108,7 @@ img {
   .offcanvas__menu {
     display: block;
     height: 75vh;
-    overflow: scroll;
+    overflow-y: auto;
   }
 }
 
