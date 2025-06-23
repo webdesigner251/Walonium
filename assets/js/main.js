@@ -217,7 +217,6 @@
   var text_slider = new Swiper(".textslider__active", {
     loop: true,
     speed: 7000,
-    spaceBetween: 0,
     autoplay: {
       delay: 1,
     },
@@ -231,6 +230,16 @@
       1024: {
         slidesPerView: 4,
       },
+    },
+  });
+
+  var text_slider = new Swiper(".textslider__active1", {
+    loop: true,
+    speed: 7000,
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    autoplay: {
+      delay: 1,
     },
   });
   /////////////////////////////////////////////////////
@@ -261,7 +270,7 @@
     },
     loop: true,
     loopedSlides: 4,
-    slidesPerView:'auto',
+    slidesPerView: 'auto',
     allowTouchMove: false,
     disableOnInteraction: true,
     breakpoints: {
@@ -343,7 +352,7 @@
       delay: 1500,
     },
   });
-  
+
   var testimonial_five_active = new Swiper(".testimonial-five-active", {
     loop: true,
     speed: 3000,
@@ -438,16 +447,16 @@
   let device_width = window.innerWidth;
 
   let skewSetter = gsap.quickTo(".portfolio__item-5 img", "skewY"),
-      clamp = gsap.utils.clamp(-15, 15);
-    const smoother = ScrollSmoother.create({
-      smooth: 1.35,
-      effects: device_width < 1025 ? false : true,
-      smoothTouch: false,
-      normalizeScroll: false,
-      ignoreMobileResize: true,
-      onUpdate: self => skewSetter(clamp(self.getVelocity() / -80)),
-      onStop: () => skewSetter(0)
-    });
+    clamp = gsap.utils.clamp(-15, 15);
+  const smoother = ScrollSmoother.create({
+    smooth: 1.35,
+    effects: device_width < 1025 ? false : true,
+    smoothTouch: false,
+    normalizeScroll: false,
+    ignoreMobileResize: true,
+    onUpdate: self => skewSetter(clamp(self.getVelocity() / -80)),
+    onStop: () => skewSetter(0)
+  });
 
 
   // P Animation
@@ -470,13 +479,13 @@
     gsap.set(pAnimationLine, { perspective: 400 });
     pSplitLine.split({ type: "lines" })
     tl.from(pSplitLine.lines, {
-      duration: 1, 
-      delay: 0.3, 
-      opacity: 0, 
-      x: 50, 
-      force3D: true, 
-      transformOrigin: "top center -50", 
-      stagger: 0.1 
+      duration: 1,
+      delay: 0.3,
+      opacity: 0,
+      x: 50,
+      force3D: true,
+      transformOrigin: "top center -50",
+      stagger: 0.1
     });
   });
 
@@ -499,14 +508,14 @@
     const headingSplitLine = new SplitText(headingAnimationLine, { type: "words" });
     gsap.set(headingAnimationLine, { perspective: 400 });
     headingSplitLine.split({ type: "words" })
-    tl.from(headingSplitLine.words, { 
-      duration: 1, 
-      delay: 0.3, 
-      opacity: 0, 
-      rotationX: -50, 
-      force3D: true, 
-      transformOrigin: "top center -50", 
-      stagger: 0.1, 
+    tl.from(headingSplitLine.words, {
+      duration: 1,
+      delay: 0.3,
+      opacity: 0,
+      rotationX: -50,
+      force3D: true,
+      transformOrigin: "top center -50",
+      stagger: 0.1,
     });
   });
 
@@ -520,12 +529,12 @@
     duration: 1,
   }, '+=1');
 
-  if ($('#hero_video').length){
+  if ($('#hero_video').length) {
     // Hero Video
     var hero_video = document.querySelector('.hero__video');
     var hero_video_icon = document.querySelector('#hero_video');
 
-    hero_video_icon.addEventListener('click', function(e) {
+    hero_video_icon.addEventListener('click', function (e) {
       e.preventDefault();
 
       hero_video.classList.toggle('show');
@@ -534,3 +543,20 @@
 
 
 })(jQuery);
+
+
+// Cookie banner
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const banner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("cookie-accept");
+
+    if (!localStorage.getItem("cookieAccepted")) {
+      banner.classList.remove("hidden");
+    }
+
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem("cookieAccepted", "true");
+      banner.classList.add("hidden");
+    });
+  });
