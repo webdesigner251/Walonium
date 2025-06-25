@@ -553,6 +553,7 @@
 
     if (!localStorage.getItem("cookieAccepted")) {
       banner.classList.remove("hidden");
+      console.log("acceptBtn")
     }
 
     acceptBtn.addEventListener("click", function () {

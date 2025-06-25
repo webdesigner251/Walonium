@@ -5400,12 +5400,20 @@ img {
   }
 }
 
+.team-blog-header{
+  color: var(--secondary);
+}
+
 .team__area {
   padding-bottom: 300px;
   background-image: url(../imgs/shape/zigzag-2.png);
   background-position: bottom left;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.team-blog-subheader{
+  color: var(--main-color-one);
 }
 
 @media (max-width: 1199px) {
