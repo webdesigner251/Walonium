@@ -1053,9 +1053,7 @@
                 </div>
               </div>
               <div class="col-12 pt-5">
-                <p class="text-center">India’s Trusted Hook & Loop Tape Manufacturer & Exporter.</p>
-                <p class="text-center">© 2025 Walonium Textile LLP. All Rights Reserved. | Design & Developed By <a
-                    href="http://inspirefox.com/" target="_blank">Insprirefox</a></p>
+                <p class="text-center">© 2025 Walonium Textile LLP. All Rights Reserved. India’s Trusted Hook & Loop Tape Manufacturer & Exporter.</p>
 
               </div>
             </div>
@@ -1090,13 +1088,33 @@
     </svg>
   </a>
 
-  <div id="cookie-banner" class="cookie-banner">
+  <div id="mainDiv" class="cookie-banner">
     <p>
       We use cookies to improve your browsing experience, analyze traffic, and support chat.
       <a href="/privacy-policy.html" target="_blank">Learn more</a>
+      
     </p>
-    <button id="cookie-accept">Accept</button>
+    <button id=" hideBtn" onclick="hideDiv()">Accept</button>
+    
+    
   </div>
+
+<script>
+    // On page load, check localStorage
+    window.onload = function () {
+      if (localStorage.getItem("divHidden") === "true") {
+        document.getElementById("mainDiv").style.display = "none";
+        console.log("Div is already hidden (loaded from localStorage).");
+      }
+    };
+ 
+    // Hide the div and save state
+    function hideDiv() {
+      document.getElementById("mainDiv").style.display = "none";
+      localStorage.setItem("divHidden", "true");
+      console.log("Div has been hidden and saved to localStorage.");
+    }
+  </script>
 
   <!-- All JS Files -->
   <script src="assets/js/jquery-3.6.1.min.js"></script>
@@ -1113,6 +1131,8 @@
   <script src="assets/js/ScrollTrigger.min.js"></script>
   <script src="assets/js/vanilla-tilt.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>

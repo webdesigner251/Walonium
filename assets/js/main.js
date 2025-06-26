@@ -21,6 +21,11 @@
 
 ****************************************************/
 
+
+
+
+
+
 (function ($) {
   "use strict";
 
@@ -547,17 +552,17 @@
 
 // Cookie banner
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const banner = document.getElementById("cookie-banner");
-    const acceptBtn = document.getElementById("cookie-accept");
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const banner = document.getElementById("cookie-banner");
+  //   const acceptBtn = document.getElementById("cookie-accept");
 
-    if (!localStorage.getItem("cookieAccepted")) {
-      banner.classList.remove("hidden");
-      console.log("acceptBtn")
-    }
+  //   if (!localStorage.getItem("cookieAccepted")) {
+  //     banner.classList.remove("hidden");
+  //     console.log("acceptBtn")
+  //   }
 
-    acceptBtn.addEventListener("click", function () {
-      localStorage.setItem("cookieAccepted", "true");
-      banner.classList.add("hidden");
-    });
-  });
+  //   acceptBtn.addEventListener("click", function () {
+  //     localStorage.setItem("cookieAccepted", "true");
+  //     banner.classList.add("hidden");
+  //   });
+  // });
