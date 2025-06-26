@@ -4677,6 +4677,7 @@ img {
 
 .textslider_1 .textslider__slide {
   text-align: center;
+  color: var(--main-color-one);
 }
 
 .textslider_1 h2 {
@@ -4686,6 +4687,7 @@ img {
   text-align: center;
   display: inline-block;
   position: relative;
+  color: var(--secondary);
 }
 
 .textslider_1 h2 span {
@@ -4695,6 +4697,7 @@ img {
 
 .textslider_2 .textslider__slide {
   text-align: center;
+  color: var(--main-color-one);
 }
 
 .textslider_2 h2 {
@@ -4704,7 +4707,6 @@ img {
   text-align: center;
   display: inline-block;
   position: relative;
-  color: rgba(182, 153, 116, 0.431372549);
 }
 
 .textslider_2 h2 span {
@@ -8594,7 +8596,7 @@ img {
 }
 
 .footer__social-3 ul {
-  gap: 30px;
+  gap: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

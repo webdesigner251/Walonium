@@ -235,7 +235,7 @@
 
   var text_slider = new Swiper(".textslider__active1", {
     loop: true,
-    speed: 7000,
+    speed: 10000,
     slidesPerView: "auto",
     spaceBetween: 0,
     autoplay: {
