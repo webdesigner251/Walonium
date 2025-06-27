@@ -3153,6 +3153,9 @@ img {
   z-index: -1;
   max-width: 100%;
 }
+p.Walonium.Textile {
+  font-size: 16px;
+}
 
 @media (max-width: 1199px) {
   .about__area .shape {
@@ -10555,6 +10558,13 @@ HOME FIVE SERVICE
   text-transform: uppercase;
 }
 
+.icon-box img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+}
+
 @media (max-width: 991px) {
   .section-title-5 {
     font-size: 36px;
@@ -12951,7 +12961,7 @@ body {
   .service__item.style3 .service__content .icon-box {
     margin-bottom: 20px;
   }
-
+  
   .hero__area_1 .hero_1_content {
     position: relative;
   }
