@@ -3153,6 +3153,7 @@ img {
   z-index: -1;
   max-width: 100%;
 }
+
 p.Walonium.Textile {
   font-size: 16px;
 }
@@ -5405,7 +5406,7 @@ p.Walonium.Textile {
   }
 }
 
-.team-blog-header{
+.team-blog-header {
   color: var(--secondary);
 }
 
@@ -5417,7 +5418,7 @@ p.Walonium.Textile {
   overflow: hidden;
 }
 
-.team-blog-subheader{
+.team-blog-subheader {
   color: var(--main-color-one);
 }
 
@@ -10558,7 +10559,7 @@ HOME FIVE SERVICE
   text-transform: uppercase;
 }
 
-.icon-box img{
+.icon-box img {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -12912,36 +12913,42 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 
 body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-    }
- 
-    .main-div {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
- 
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
- 
-    button:hover {
-      background-color: #0056b3;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
 
+.main-div {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.blog-small-img {
+  max-height: 250px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
 @media (max-width: 767px) {
 
   .img-h-500,
@@ -12961,7 +12968,7 @@ body {
   .service__item.style3 .service__content .icon-box {
     margin-bottom: 20px;
   }
-  
+
   .hero__area_1 .hero_1_content {
     position: relative;
   }
@@ -12973,6 +12980,9 @@ body {
   .main-thumb.text-end {
     margin-top: -70px;
   }
+  .blog-small-img {
+  max-height: 100%;
+}
 }
 
 @media (max-width: 576px) {
