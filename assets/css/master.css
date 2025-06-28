@@ -4684,7 +4684,7 @@ p.Walonium.Textile {
   color: var(--main-color-one);
 }
 
-.textslider_1 h2 {
+.textslider_1 .sliderTitle {
   font-size: 60px;
   font-weight: 400;
   text-transform: capitalize;
@@ -4694,7 +4694,7 @@ p.Walonium.Textile {
   color: var(--secondary);
 }
 
-.textslider_1 h2 span {
+.textslider_1 .sliderTitle span {
   position: absolute;
   right: -74px;
 }
@@ -4704,7 +4704,7 @@ p.Walonium.Textile {
   color: var(--main-color-one);
 }
 
-.textslider_2 h2 {
+.textslider_2 .sliderTitle {
   font-size: 80px;
   font-weight: 400;
   text-transform: capitalize;
@@ -4713,7 +4713,7 @@ p.Walonium.Textile {
   position: relative;
 }
 
-.textslider_2 h2 span {
+.textslider_2 .sliderTitle span {
   position: absolute;
   right: -74px;
 }
@@ -12606,11 +12606,11 @@ HOME FIVE FOOTER
 }
 
 @media all and (max-width: 1500px) {
-  .textslider_1 h2 {
+  .textslider_1 .sliderTitle {
     font-size: 55px;
   }
 
-  .textslider_2 h2 {
+  .textslider_2 .sliderTitle {
     font-size: 55px;
   }
 
@@ -12669,11 +12669,11 @@ HOME FIVE FOOTER
     display: none;
   }
 
-  .textslider_1 h2 {
+  .textslider_1 .sliderTitle {
     font-size: 35px;
   }
 
-  .textslider_2 h2 {
+  .textslider_2 .sliderTitle {
     font-size: 35px;
   }
 }
