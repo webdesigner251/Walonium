@@ -3133,6 +3133,10 @@ img {
   position: relative;
 }
 
+.hero__area_1 .video_area a img{
+  width: 180px;
+}
+
 .hero__area_1 .video_area a i {
   position: absolute;
   left: 50%;
