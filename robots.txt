@@ -7,12 +7,4 @@ Disallow: /thank-you/
 Disallow: /privacy-policy.html
 Disallow: /terms-and-conditions.html
 
-Allow: /assets/
-Allow: /product/
-Allow: /blog/
-Allow: /hook-and-loop-tape-range.html
-
-# Optional: Uncomment if server load becomes high
-# Crawl-delay: 10
-
 Sitemap: https://www.waloniumtextile.com/sitemap.xml
