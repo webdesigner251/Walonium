@@ -21,11 +21,6 @@
 
 ****************************************************/
 
-
-
-
-
-
 (function ($) {
   "use strict";
 
@@ -75,21 +70,6 @@
   /////////////////////////////////////////////////////
 
 
-  /////////////////////////////////////////////////////
-  // 04. Header Search
-  $('.search-icon').on('click', function () {
-    $(this).hide();
-    $('.search-close').show();
-    $('.search__form').addClass('showed');
-  });
-
-  $('.search-close').on('click', function () {
-    $(this).hide();
-    $('.search-icon').show();
-    $('.search__form').removeClass('showed');
-  });
-
-  /////////////////////////////////////////////////////
 
 
   /////////////////////////////////////////////////////
@@ -199,16 +179,6 @@
 
 
   /////////////////////////////////////////////////////
-  // Progress Bar Activate
-  $('.skill_active').progressBar({
-    height: "10",
-    animation: true,
-    barColor: "#B69974",
-  });
-  /////////////////////////////////////////////////////
-
-
-  /////////////////////////////////////////////////////
   AOS.init({
     once: true,
     offset: 200,
@@ -249,20 +219,6 @@
   });
   /////////////////////////////////////////////////////
 
-
-  /////////////////////////////////////////////////////
-  // 15. Text Slider
-  var text_slider_2 = new Swiper(".textslider__active-2", {
-    loop: true,
-    speed: 3000,
-    spaceBetween: 30,
-    slidesPerView: 'auto',
-    autoplay: {
-      delay: 1,
-    },
-  });
-  /////////////////////////////////////////////////////
-
   /////////////////////////////////////////////////////
   // 10. Text Slider
   var text_slider = new Swiper(".textslider__active-3", {
@@ -287,32 +243,6 @@
       },
       1024: {
         slidesPerView: 4,
-      },
-    },
-  });
-  /////////////////////////////////////////////////////
-
-  /////////////////////////////////////////////////////
-  // 15. Text Slider down
-  var text_slider_2 = new Swiper(".textslider__down-2", {
-    loop: true,
-    speed: 3000,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 1,
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 2,
       },
     },
   });
@@ -347,17 +277,6 @@
 
 
   /////////////////////////////////////////////////////
-  // 12. 
-  var testimonial_slider_3 = new Swiper(".testimonial__slider-3", {
-    loop: true,
-    speed: 3000,
-    spaceBetween: 50,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 1500,
-    },
-  });
-
   var testimonial_five_active = new Swiper(".testimonial-five-active", {
     loop: true,
     speed: 3000,
@@ -396,30 +315,6 @@
     meanScreenWidth: "1365",
     meanMenuContainer: '.offcanvas__menu',
     meanMenuCloseSize: '24px',
-  });
-  /////////////////////////////////////////////////////
-
-
-  /////////////////////////////////////////////////////
-  // 14. 
-  var team_slider_3 = new Swiper(".team__slider-3", {
-    loop: true,
-    speed: 3000,
-    spaceBetween: 30,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1000: {
-        slidesPerView: 3,
-      },
-      1300: {
-        slidesPerView: 4,
-      },
-    },
   });
   /////////////////////////////////////////////////////
 
@@ -523,46 +418,4 @@
       stagger: 0.1,
     });
   });
-
-
-  // Home 3 Hero shape animaton
-
-  let home3HeroShape = gsap.timeline();
-
-  home3HeroShape.from(".hero__title-3-wrap .line", {
-    xPercent: -100,
-    duration: 1,
-  }, '+=1');
-
-  if ($('#hero_video').length) {
-    // Hero Video
-    var hero_video = document.querySelector('.hero__video');
-    var hero_video_icon = document.querySelector('#hero_video');
-
-    hero_video_icon.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      hero_video.classList.toggle('show');
-    });
-  }
-
-
 })(jQuery);
-
-
-// Cookie banner
-
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   const banner = document.getElementById("cookie-banner");
-  //   const acceptBtn = document.getElementById("cookie-accept");
-
-  //   if (!localStorage.getItem("cookieAccepted")) {
-  //     banner.classList.remove("hidden");
-  //     console.log("acceptBtn")
-  //   }
-
-  //   acceptBtn.addEventListener("click", function () {
-  //     localStorage.setItem("cookieAccepted", "true");
-  //     banner.classList.add("hidden");
-  //   });
-  // });
