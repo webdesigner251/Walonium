@@ -12933,3 +12933,7 @@ button:hover {
     background-size: 22px;
   }
 }
+
+.mfp-close {
+  background-color: transparent !important;
+}
