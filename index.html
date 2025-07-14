@@ -112,10 +112,12 @@
   <div id="preloader">
     <div id="loader"></div>
   </div>
+
   <!-- Scroll to top -->
   <button id="scroll_top" class="scroll-top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
+
   <!-- Offcanvas area start -->
   <div class="offcanvas__area">
     <div class="offcanvas__inner">
@@ -237,6 +239,7 @@
       </div>
     </div>
   </div>
+
   <!-- Offcanvas area end -->
   <div id="smooth-wrapper">
     <div id="smooth-content">
@@ -319,7 +322,8 @@
                   product range <i class="fa-solid fa-arrow-right"></i></a>
               </div>
               <div class="video_area " data-lag="0.3">
-                <a href="https://youtu.be/k_86VaLWMqo?si=PAezvdt6puGsPu-B" class="popup-link">
+                <a href="https://www.youtube.com/embed/k_86VaLWMqo?si=6xreAcH4ma0y9b7M" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
                   <img class="cxuSpin-slow2" src="assets/imgs/hero/03.png" alt="Hero Image" />
                   <i class="fa-solid fa-play"></i>
                 </a>
@@ -1206,7 +1210,23 @@
     <button id="hideBtn" onclick="hideDiv()">Accept</button>
   </div>
 
-
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe class="w-100" width="560" height="515" src="https://www.youtube.com/embed/k_86VaLWMqo?si=W4RZq32fzB6qfwfx"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
