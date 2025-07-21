@@ -1,26 +1,3 @@
-/***************************************************
-==================== JS INDEX ======================
-****************************************************
-01. Preloader
-02. Go top Top
-03. Offcanvas Menu Control
-04. Header Search
-05. Header | Home One
-06. Header | Home Two
-07. Counter Activation
-08. Testimonial Slider | Home 1
-09. Testimonial Slider | Home 2
-10. Team Slider
-11. MixitUp activation
-12. WOW JS Activation
-13. Mobile Menu Activation
-14. ProgressBar activation
-15. Banner Slider
-
-
-
-****************************************************/
-
 (function ($) {
   "use strict";
 
@@ -70,28 +47,6 @@
   /////////////////////////////////////////////////////
 
 
-
-
-  /////////////////////////////////////////////////////
-  // 06. 
-  var share_btn = document.querySelectorAll('.share-btn');
-  var social_share = document.querySelectorAll('.social-share');
-
-  for (let i = 0; i < share_btn.length; i++) {
-    share_btn[i].addEventListener('click', function () {
-      social_share[i].classList.toggle('active');
-    });
-
-  }
-  /////////////////////////////////////////////////////
-
-
-  /////////////////////////////////////////////////////
-  // 06. Magnific Popup Activate
-  $('.popup-link').magnificPopup({ type: 'iframe' });
-  /////////////////////////////////////////////////////
-
-
   /////////////////////////////////////////////////////
   // 07. Counter Activation
   const counter_1 = window.counterUp.default
@@ -116,35 +71,6 @@
   const counter_1_els = document.querySelectorAll('.counter_fast');
   counter_1_els.forEach((el) => {
     counter_1_io.observe(el)
-  });
-
-  /////////////////////////////////////////////////////
-
-
-  /////////////////////////////////////////////////////
-  // 07. Counter Activation
-  const counter_2 = window.counterUp.default
-  const counter_cb_2 = entries => {
-
-    entries.forEach(entry => {
-      const el = entry.target
-      if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-        counter_2(el, {
-          duration: 3000,
-          delay: 16,
-        })
-        el.classList.add('is-visible')
-      }
-    })
-  }
-
-  const counter_2_io = new IntersectionObserver(counter_cb_2, {
-    threshold: 1
-  })
-
-  const counter_2_els = document.querySelectorAll('.counter_medium');
-  counter_2_els.forEach((el) => {
-    counter_2_io.observe(el)
   });
 
   /////////////////////////////////////////////////////

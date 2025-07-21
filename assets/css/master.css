@@ -1,49 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-  Theme Name: Walonium - Digital Agency HTML5 Template
-  Author: wowtheme7
-  Support: 
-  Description: Walonium – is a Digital Agency HTML5 Template that comes with high-quality 3 Pre build Home Pages and many built-in awesome inner pages  which are perfect for any creative agencies, designers, digital agencies, freelancers, developers, designers, marketing, startup, blog and portfolio.
-  Version: 1.0
-
------------------------------------------------------------------------------------
-
-/************ TABLE OF CONTENTS ***************
-
-  01. VARIBALES DECLARARION
-  02. MIXIN DECLARATION
-  03. TYPOGRAPHY CSS START
-  04. THEME CSS START
-  05. BUTTON CSS START
-  06. TITLE CSS START
-  07. WIDGET CSS START
-  08. ANIMATION CSS START
-  09. LOADING CSS START
-  10. MENU CSS START
-  11. MODAL CSS START
-  12. HEADER CSS START
-  13. OFFCANVAS CSS START
-  14. HERO CSS START
-  15. FEATURE CSS START
-  16. ABOUT CSS START
-  17. SERVICE CSS START
-  18. COUNTER CSS START
-  19. TESTIMONIAL CSS START
-  20. PROCESS CSS START
-  21. TEAM CSS START
-  22. PORTFOLIO CSS START
-  23. HIRE CSS START
-  24. PRICE CSS START
-  25. BRAND CSS START
-  26. BLOG CSS START
-  27. CONTACT CSS START
-  28. FOOTER CSS START
-
-**********************************************/
-/*----------------------------------------*/
-/*  01. VARIBALES DECLARARION
-/*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
@@ -68,9 +23,6 @@
   --yellow-2: #D8FF36;
 }
 
-/*----------------------------------------*/
-/*  02. MIXIN DECLARATION
-/*----------------------------------------*/
 /*----------------------------------------*/
 /* 03. TYPOGRAPHY CSS START
 /*----------------------------------------*/
@@ -1637,55 +1589,6 @@ img {
   transition: all 0.2s;
 }
 
-.main-menu .mega-menu {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 100px;
-  z-index: 9;
-  background-color: var(--blue);
-  text-align: left;
-  padding: 40px 230px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[6];
-  grid-template-columns: repeat(6, 1fr);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-}
-
-@media (max-width: 1919px) {
-  .main-menu .mega-menu {
-    padding: 40px 50px;
-  }
-}
-
-@media (max-width: 1399px) {
-  .main-menu .mega-menu {
-    padding: 40px 20px;
-  }
-}
-
-.main-menu .mega-menu li {
-  display: block;
-}
-
-.main-menu .mega-menu li:first-child {
-  font-size: 18px;
-  color: var(--white);
-  padding-bottom: 10px;
-  text-transform: capitalize;
-}
-
-.main-menu .mega-menu li a {
-  padding: 8px 5px;
-  color: var(--white);
-}
-
 /*----------------------------------------*/
 /*  11. MODAL CSS START
 /*----------------------------------------*/
@@ -3247,15 +3150,6 @@ p.Walonium.Textile {
 .about__imgs .image-2 img {
   border: 7px solid #FFF;
   border-radius: 20px;
-}
-
-@media (max-width: 1919px) {
-
-  .about__imgs .image-1,
-  .about__imgs-6 .image-1 {
-    /* -webkit-transform: translateX(-20px); */
-    /* transform: translateX(-20px); */
-  }
 }
 
 @media (max-width: 767px) {
@@ -10502,11 +10396,14 @@ HOME FIVE SERVICE
   text-transform: uppercase;
 }
 
+.service__item.style2 .icon-box img {
+    height: auto;
+}
+
 .icon-box img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-
 }
 
 @media (max-width: 991px) {
@@ -10518,82 +10415,6 @@ HOME FIVE SERVICE
 .hero__btn-wrapper-5.service-btn {
   padding-top: 40px;
 }
-
-.service__area-5 {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-@media (max-width: 991px) {
-  .service__area-5 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-.service__items-5 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 50px 1fr 50px 1fr;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-}
-
-@media (max-width: 1199px) {
-  .service__items-5 {
-    gap: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .service__items-5 {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 767px) {
-  .service__items-5 {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
-.service__item-5 {
-  text-align: center;
-  position: relative;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  padding: 40px;
-}
-
-.service__item-5:hover {
-  background: #25333F;
-}
-
-.service__thumb-5 {
-  margin-bottom: 30px;
-}
-
-.service__content-5 p {
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.service__item-title {
-  color: var(--white);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.service__item-title:hover {
-  color: var(--main-color-one-3);
-}
-
 /*
 
 -----------------------
@@ -12936,4 +12757,8 @@ button:hover {
 
 .mfp-close {
   background-color: transparent !important;
+}
+
+.hero-bg {
+    background-image: url('../imgs/hero/00.png')
 }
