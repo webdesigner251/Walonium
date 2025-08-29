@@ -1,0 +1,8 @@
+# Redirect non-www to www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^waloniumtextile\.com [NC]
+RewriteRule ^(.*)$ https://www.waloniumtextile.com/$1 [L,R=301]
+
+# Redirect linkedin subdomain to homepage
+RewriteCond %{HTTP_HOST} ^linkedin\.waloniumtextile\.com [NC]
+RewriteRule ^(.*)$ https://www.waloniumtextile.com/ [L,R=301]
