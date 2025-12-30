@@ -81,7 +81,10 @@ a.db-btn-border.btn-rollover.colo-white {
     color: #ffffff;
     font-size: 24px;
 }
-.faq__list .accordion-item.style-2 .accordion-button::after {
+.faq__list .accordion-item.style-2 .accordion-button{
+    padding: 0 49px 0 20px !important;
+}
+.faq__list .accordion-item.style-2 .accordion-button::after  {
     background: var(--main-color-one);
     color: #ffffff;
 }

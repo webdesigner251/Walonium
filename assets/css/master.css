@@ -3036,7 +3036,7 @@ img {
   position: relative;
 }
 
-.hero__area_1 .video_area a img{
+.hero__area_1 .video_area a img {
   width: 180px;
 }
 
@@ -4623,6 +4623,7 @@ p.Walonium.Textile {
 
 .faq__list .accordion-item.style-2 .accordion-button {
   padding-left: 20px;
+  padding-right: 49px;
 }
 
 .faq__list .accordion-item.style-2 .accordion-button::after {
@@ -10397,7 +10398,7 @@ HOME FIVE SERVICE
 }
 
 .service__item.style2 .icon-box img {
-    height: auto;
+  height: auto;
 }
 
 .icon-box img {
@@ -10415,6 +10416,7 @@ HOME FIVE SERVICE
 .hero__btn-wrapper-5.service-btn {
   padding-top: 40px;
 }
+
 /*
 
 -----------------------
@@ -12713,6 +12715,7 @@ button:hover {
   max-width: 100%;
   object-fit: cover;
 }
+
 @media (max-width: 767px) {
 
   .img-h-500,
@@ -12744,9 +12747,10 @@ button:hover {
   .main-thumb.text-end {
     margin-top: -70px;
   }
+
   .blog-small-img {
-  max-height: 100%;
-}
+    max-height: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -12760,5 +12764,5 @@ button:hover {
 }
 
 .hero-bg {
-    background-image: url('../imgs/hero/00.png')
+  background-image: url('../imgs/hero/00.png')
 }
